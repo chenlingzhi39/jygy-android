@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_F8F8F8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/tvGradeLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="选择年级: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <EditText
+                    android:id="@+id/etGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvGradeLeft"
+                    android:background="@drawable/login_textedit"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/select_down"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:textSize="@dimen/text_moderate2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/tvClassLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="选择班级: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <EditText
+                    android:id="@+id/etClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvClassLeft"
+                    android:background="@drawable/login_textedit"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/select_down"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:textSize="@dimen/text_moderate2" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="宝宝姓名: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <EditText
+                    android:id="@+id/etBabyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:background="@drawable/login_textedit"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:textSize="@dimen/text_moderate2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="宝宝性别: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <RadioGroup
+                    android:id="@+id/rgBabySex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbMan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:button="@drawable/check"
+                        android:text="男宝宝"
+                        android:textSize="@dimen/text_moderate2" />
+
+                    <RadioButton
+                        android:id="@+id/rbWoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check"
+                        android:text="女宝宝"
+                        android:textSize="@dimen/text_moderate2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/tvBridthDayLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="出身年月: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <EditText
+                    android:id="@+id/etBridthDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvBridthDayLeft"
+                    android:background="@drawable/login_textedit"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/select_down"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:textSize="@dimen/text_moderate2" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="家长姓名: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <TextView
+                    android:id="@+id/tvParentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/text_moderate2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/tvChooseClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="监护角色: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <EditText
+                    android:id="@+id/etRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvChooseClass"
+                    android:background="@drawable/login_textedit"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/select_down"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:textSize="@dimen/text_moderate2" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:ems="5"
+                    android:gravity="center|top"
+                    android:paddingLeft="5dp"
+                    android:text="宝宝头像: "
+                    android:textSize="@dimen/text_moderate2" />
+
+                <ImageView
+                    android:id="@+id/ivBabyIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icon_new"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

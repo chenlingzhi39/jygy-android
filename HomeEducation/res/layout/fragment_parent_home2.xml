@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.endeavour.jygy.parent.fragment.ParentHomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/llBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parent_home_tab_height">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivShake"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/shake_bg"
+            android:padding="4dp"
+            android:src="@drawable/shake" />
+
+        <RelativeLayout
+            android:id="@+id/rlLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_toRightOf="@+id/ivIcon"
+                android:paddingBottom="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_ultraSmall"
+                app:rv_backgroundColor="@color/salmon"
+                app:rv_backgroundPressColor="@color/palevioletred"
+                app:rv_cornerRadius_BR="8dp"
+                app:rv_cornerRadius_TR="8dp"
+                app:rv_strokeColor="@color/white"
+                app:rv_strokeWidth="4dp" />
+
+            <com.endeavour.jygy.common.view.CircleImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                app:border_color="#ffffff"
+                app:border_width="6dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlStudenMoral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#7a000000"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvStudenMoral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bandge"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_moderate1" />
+
+                <TextView
+                    android:id="@+id/tvClassInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_moderate1" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/glMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#00000000"
+        android:numColumns="3" />
+
+</LinearLayout>

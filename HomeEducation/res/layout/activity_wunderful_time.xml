@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.endeavour.jygy.common.ui.swipyrefresh.SwipyRefreshLayout
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlDiscuss"
+        android:cacheColorHint="#00000000"
+        app:direction="both">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lvDynamic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d2d2d2"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp" />
+    </com.endeavour.jygy.common.ui.swipyrefresh.SwipyRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDiscuss"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+
+        <EditText
+            android:id="@+id/etDiscuss"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/login_textedit"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/text_moderate2" />
+
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="#ff5b69"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_moderate2"
+            rv:rv_backgroundColor="#ff5b69"
+            rv:rv_backgroundPressColor="#ff766f"
+            rv:rv_cornerRadius="4dp"
+            rv:rv_strokeWidth="1dp"
+            rv:rv_textPressColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

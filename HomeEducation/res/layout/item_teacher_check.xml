@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_moderate2" />
+
+        <TextView
+            android:id="@+id/tvParentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvTitle"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请求审核"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/text_moderate2" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tvCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="审核"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/text_moderate2"
+            app:rv_backgroundColor="@color/white"
+            app:rv_backgroundPressColor="@color/text_red_pressed"
+            app:rv_cornerRadius="3dp"
+            app:rv_strokeColor="@color/text_red"
+            app:rv_strokeWidth="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>

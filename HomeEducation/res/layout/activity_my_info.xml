@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F8F8F8"
+    android:orientation="vertical"
+    tools:context="com.endeavour.jygy.parent.activity.MyInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/ivBabyIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_new" />
+
+        <TextView
+            android:id="@+id/tvBabyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/ivBabyIcon"
+            android:text="羊羊"
+            android:textSize="@dimen/text_moderate3" />
+
+        <TextView
+            android:id="@+id/tvPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivBabyIcon"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/ivBabyIcon"
+            android:text="我要缴费"
+            android:textSize="@dimen/text_moderate3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llBabySex"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="宝宝性别"
+            android:textSize="@dimen/text_moderate2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/list_arrow"
+            android:text="男"
+            android:textSize="@dimen/text_moderate2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llBabyBrithDay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="出生年月"
+            android:textSize="@dimen/text_moderate2" />
+
+        <TextView
+            android:id="@+id/tvBridthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/list_arrow"
+            android:text="2010-01-01"
+            android:textSize="@dimen/text_moderate2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llPayHistory"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="我的缴费记录"
+            android:textSize="@dimen/text_moderate2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/list_arrow"
+            android:textSize="@dimen/text_moderate2" />
+
+    </RelativeLayout>
+
+</LinearLayout>

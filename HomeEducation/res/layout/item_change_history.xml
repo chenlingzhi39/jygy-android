@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝宝姓名: "
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_moderate1" />
+
+            <TextView
+                android:id="@+id/tvBabyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王诗涵"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_moderate1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前班级: "
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_moderate1" />
+
+            <TextView
+                android:id="@+id/tvClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王诗涵"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_moderate1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更换班级: "
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_moderate1" />
+
+            <TextView
+                android:id="@+id/tvNewClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王诗涵"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_moderate1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换班状态: "
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_moderate1" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王诗涵"
+                android:textColor="#1063d1"
+                android:textSize="@dimen/text_moderate1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请日期: "
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_moderate1" />
+
+            <TextView
+                android:id="@+id/tvData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王诗涵"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_moderate1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivRightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/list_arrow" />
+
+</LinearLayout>

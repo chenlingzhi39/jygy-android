@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 标题栏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="gone"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- app:navigationIcon="?attr/homeAsUpIndicator" -->
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spToolbarTitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/rlTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="3dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvToolbarRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+
+            <com.flyco.roundview.RoundTextView xmlns:rv="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rtvRedDot"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_above="@+id/tvToolbarRight"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="#FD481F"
+                android:textSize="11.5sp"
+                rv:rv_backgroundColor="#ffffff"
+                rv:rv_isRadiusHalfHeight="true"
+                rv:rv_strokeColor="#ffffff"
+                rv:rv_strokeWidth="1dp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+</merge>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+
+    <color name="text_gray">#888888</color>
+    <color name="text_red">#fd5e6d</color>
+    <color name="text_red_pressed">#59171d</color>
+    <color name="text_green">#6cb51e</color>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+    <color name="teacher_task_list_readed">#fafafa</color>
+    <color name="teacher_task_list_noread">#ffffff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black_06233B">#06233B</color>
+    <color name="black_1f1f22">#1f1f22</color>
+    <color name="black_010101">#010101</color>
+    <color name="blue_021363">#021363</color>
+    <color name="blue_010f3f">#010f3f</color>
+    <color name="blue_666e8a">#666e8a</color>
+    <color name="blue_5c6999">#5c6999</color>
+    <color name="red_e73a3d">#e73a3d</color>
+    <color name="red_FB4354">#FB4354</color>
+    <color name="red_b00606">#b00606</color>
+    <color name="grey_f1f1f1">#f1f1f1</color>
+    <color name="grey_c9c9c9">#c9c9c9</color>
+    <color name="grey_9e9e9e">#9e9e9e</color>
+    <color name="blue_8196cc">#8196cc</color>
+    <color name="grey_fdfdfd">#fdfdfd</color>
+    <color name="grey_fdfdfd_alpha_80">#ccfdfdfd</color>
+    <color name="grey_cccccc">#cccccc</color>
+    <color name="grey_bbbbbb">#bbbbbb</color>
+    <color name="grey_8b8b8b">#8b8b8b</color>
+    <color name="grey_F8F8F8">#F8F8F8</color>
+    <color name="grey_b6b6b6">#b6b6b6</color>
+    <color name="grey_ecebf1">#ecebf1</color>
+    <color name="grey_dedde1">#dedde1</color>
+    <color name="black_555555">#555555</color>
+    <color name="black_666666">#666666</color>
+    <color name="black_313131">#313131</color>
+    <color name="black_b2000000">#b2000000</color>
+    <color name="white_alpha_95">#f3ffffff</color>
+    <color name="black_alpha_95">#f3000000</color>
+
+
+    <!-- drawable 在item中引用color 不能用color-->
+    <drawable name="blue_666e8a">#666e8a</drawable>
+    <drawable name="red_e73a3d">#e73a3d</drawable>
+    <drawable name="transparent">#00000000</drawable>
+
+
+    <color name="dynamic_high">#5ba6c5</color>
+    <color name="text_wks">#6babdb</color>
+
+    <color name="pink_my">#FF5D6C</color>
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_gray_w">#F0F0F1</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+    <color name="header_normal">#ffe74c3c</color>
+    <color name="header_pressed">#ffc0392b</color>
+    <color name="menu_section_header">#FFDDDDDD</color>
+    <color name="fuxk_base_color_white">#ffffff</color>
+    <color name="fuxk_base_divide_line_color">#dcdcdc</color>
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    <color name="color_tool_bar">#ff5b69</color>
+    <color name="color_bg">#f8f8f8</color>
+    <color name="primary">#3c515c</color>
+    <color name="scrim">#42000000</color>
+    <color name="pressed">#33000000</color>
+    <color name="tran">#0000</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="teal_500">#009688</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="light_green_500">#8BC34A</color>
+    <color name="tumblr_primary">#36465D</color>
+    <color name="tumblr_orange">#F2992E</color>
+    <color name="tumblr_green">#56BC8A</color>
+    <color name="tumblr_white">#FFFFFF</color>
+    <color name="tumblr_grey">#748089</color>
+    <color name="tumblr_blue">#4AA8D8</color>
+    <color name="tumblr_red">#D95E40</color>
+    <color name="light_red">#FF5D6C</color>
+    <color name="path_primary">#E62F17</color>
+    <color name="path_orange">#FF9500</color>
+    <color name="path_blue">#1774E6</color>
+    <color name="path_black">#403B36</color>
+    <color name="path_green">#5FB336</color>
+    <color name="path_purple">#49098A</color>
+
+    <color name="tv_status_blue">#1063d1</color>
+    <color name="tv_status_green">#62ae1d</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>

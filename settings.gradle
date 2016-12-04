@@ -1,0 +1,4 @@
+include ':HomeEducation'
+//include ':wechat_sdk_sample_android'
+//include ':HomeEducation_V7'
+//include ':youtuiShare_lib'

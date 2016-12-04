@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_recorder_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <View 
+          android:id="@+id/id_recorder_anim"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_centerHorizontal="true"
+          android:layout_gravity="center_vertical|center"
+          android:background="@drawable/sound"/>
+
+</RelativeLayout>

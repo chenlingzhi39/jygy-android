@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/boy" />
+
+    <LinearLayout
+        android:id="@+id/lvRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5d8cc1"
+                android:textSize="@dimen/text_moderate2" />
+
+            <TextView
+                android:id="@+id/tvClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvName"
+                android:textColor="#b6b6b6"
+                android:textSize="@dimen/text_moderate1" />
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tvDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="删除"
+                android:textColor="@color/red_FB4354"
+                android:textSize="@dimen/text_moderate1"
+                rv:rv_backgroundColor="@color/transparent"
+                rv:rv_backgroundPressColor="@color/gray"
+                rv:rv_textPressColor="#ffffff" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewSpace2"
+            android:layout_width="10dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_moderate1" />
+        <!--
+                <com.endeavour.jygy.common.view.MeasuredGridView
+                    android:id="@+id/gvImgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4" >
+                </com.endeavour.jygy.common.view.MeasuredGridView>
+        -->
+        <!--
+                <com.endeavour.jygy.common.view.ImageGridView
+                    android:id="@+id/ivGradView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp" />
+        -->
+
+        <View
+            android:id="@+id/viewSpace"
+            android:layout_width="10dp"
+            android:layout_height="15dp" />
+
+        <com.endeavour.jygy.common.view.NineSquaresView
+            android:id="@+id/nsvDynamicImgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.endeavour.jygy.common.view.VideoSquaresView
+            android:id="@+id/videoSquaresView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!--
+        <FrameLayout
+            android:id="@+id/igDynamicViewCon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+             />
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="--"
+                android:textColor="#ababab"
+                android:textSize="@dimen/text_mini" />
+
+            <LinearLayout
+                android:id="@+id/llPopupActions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btnDiscuss">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tvLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/news_btn_zan"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:text=" 赞  "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_ultraSmall"
+                    rv:rv_backgroundColor="#555554"
+                    rv:rv_backgroundPressColor="@color/gray"
+                    rv:rv_textPressColor="#ffffff" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_06233B"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tvDiscuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/news_btn_pl"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="4dp"
+                    android:text="评论"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_ultraSmall"
+                    rv:rv_backgroundColor="#555554"
+                    rv:rv_backgroundPressColor="@color/gray"
+                    rv:rv_textPressColor="#ffffff" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_06233B"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tvDelPop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/icon_revoke"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="4dp"
+                    android:text="撤"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_ultraSmall"
+                    rv:rv_backgroundColor="#555554"
+                    rv:rv_backgroundPressColor="@color/gray"
+                    rv:rv_textPressColor="#ffffff" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnDiscuss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_review"
+                android:textSize="@dimen/text_ultraSmall" />
+        </RelativeLayout>
+
+        <com.endeavour.jygy.common.view.PraiseTextView
+            android:id="@+id/tvLikeNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#ababab"
+            android:textSize="@dimen/text_ultraSmall" />
+
+        <LinearLayout
+            android:id="@+id/llDiscuss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTaskDetial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="2dp"
+        android:drawableTop="@drawable/ic_medal"
+        android:gravity="center"
+        android:text="任务详情>"
+        android:textColor="#5d8cc1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvRight"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvDiscussCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

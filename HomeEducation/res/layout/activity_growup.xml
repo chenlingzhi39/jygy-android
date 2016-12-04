@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gvGrowUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_grow_bottom"
+        android:horizontalSpacing="8dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="8dp">
+
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/ll_grow_bottom"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F8F8F8"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnGrowDo"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_big"
+            android:gravity="center"
+            android:text="我要制作"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+</RelativeLayout>

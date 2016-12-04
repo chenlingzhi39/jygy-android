@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.endeavour.jygy.LoginActivity">
+
+    <Button
+        android:id="@+id/btnIPSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP设置"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivUserIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_icon_margin_top"
+        android:adjustViewBounds="true"
+        android:background="@drawable/icon_new"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rlPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ivUserIcon"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/etPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_textedit"
+            android:gravity="right|center_vertical"
+            android:paddingRight="18dp"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textSize="@dimen/text_moderate2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="请输入手机号"
+            android:textSize="@dimen/text_moderate2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlPhoneNum"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_textedit"
+            android:gravity="right|center_vertical"
+            android:paddingRight="18dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="@dimen/text_moderate2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="密码"
+            android:textSize="@dimen/text_moderate2" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/login_chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlPassword"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:button="@drawable/check"
+        android:paddingLeft="10dp"
+        android:text="记住密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_chk"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/btn2Sign"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_moderate2"
+            android:textStyle="bold"
+            rv:rv_backgroundColor="#797979"
+            rv:rv_backgroundPressColor="#707070"
+            rv:rv_cornerRadius="4dp"
+            rv:rv_strokeColor="#767676"
+            rv:rv_strokeWidth="1dp"
+            rv:rv_textPressColor="#9a9a9a" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/btnPay"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_moderate2"
+            rv:rv_backgroundColor="#ff5b69"
+            rv:rv_backgroundPressColor="#ff766f"
+            rv:rv_cornerRadius="4dp"
+            rv:rv_strokeWidth="1dp"
+            rv:rv_textPressColor="#ffffff" />
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="忘记密码?"
+        rv:rv_textPressColor="@color/gray" />
+</RelativeLayout>

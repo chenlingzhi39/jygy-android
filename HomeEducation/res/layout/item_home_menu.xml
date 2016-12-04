@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlTopRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/menu_dongtai"
+            android:clickable="true" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/rtvRedDot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tvIcon"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            rv:rv_backgroundColor="@color/red"
+            rv:rv_isRadiusHalfHeight="true"
+            rv:rv_strokeColor="@color/white"
+            rv:rv_strokeWidth="1dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="item"
+        android:textSize="@dimen/text_moderate1" />
+
+</LinearLayout>

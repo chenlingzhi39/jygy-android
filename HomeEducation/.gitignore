@@ -1,0 +1,13 @@
+/.settings
+/gen
+/bin
+/gradle
+/.gradle
+/.idea
+/build
+/*.iml
+/lint.xml
+*~
+.DS_Store
+*.iml
+org.eclipse.jdt.core.prefs

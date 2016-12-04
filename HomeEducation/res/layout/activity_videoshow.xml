@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black">
+
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"/>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="gone"
+        android:background="@drawable/btnclose" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gvClasses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="#00000000"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnTuo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#ffbabd"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="托班"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_extraBig" />
+
+
+    <Button
+        android:id="@+id/btnSmall"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#fa9c9c"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="小班"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_extraBig" />
+
+
+    <Button
+        android:id="@+id/btnMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#fa797b"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="中班"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_extraBig" />
+
+
+    <Button
+        android:id="@+id/btnBig"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#e56b67"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="大班"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_extraBig" />
+
+</LinearLayout>

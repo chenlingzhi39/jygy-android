@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.endeavour.jygy"
+    android:versionCode="67"
+    android:versionName="2.0.67">
+
+    <uses-sdk android:minSdkVersion="16" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 允许网络访问的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 扫描权限 开始 -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- bugly -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 允许网络访问的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 系统查看任务 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 扫描权限 开始 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.wizarpos.pay.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- bugly -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.MainApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_new"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".InitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".parent.activity.ParentHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ImageBrowserActivity"
+            android:label="Tabs/Styled"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.SingleImageBrowserActivity"
+            android:label="Tabs/Styled"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".video.VideoMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.crash.DefaultErrorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.nereo.imagechoose.MultiImageSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="song.image.crop.CropImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.nereo.imagechoose.ShowActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!-- debug -->
+        <activity
+            android:name=".debug.DebugActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".debug.DebugChooseImage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- end debug -->
+
+
+        <!-- 【必须】 exported设置为true -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.hy.android.media.MediaMainSActivity"
+            android:screenOrientation="portrait" />
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，其中android:name部分要改为当前包名 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 【必须】 请修改为当前APP名包.PUSH_ACTION，如demo的包名为：com.qq.xgdemo -->
+                <action android:name="com.endeavour.jygy.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加 -->
+        <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
+        <receiver android:name=".common.xg.receiver.MessageReceiver">
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 请修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100171096" />
+        <!-- 【必须】 请修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A9B9TN4SW14Y" />
+
+        <service
+            android:name=".common.xg.service.MessService"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcome.MoaWelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.activity.SignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.activity.IPSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.activity.SignStep2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.activity.ResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.activity.ChangePasswdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ParentClassListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ParentTaskReplyContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ParentClassDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ParentTabActivity"
+            android:label="Tabs/Styled"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+        <activity
+            android:name=".parent.activity.AskForLeaveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.FoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.FoodHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.GrowupArchiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.EditTaskFeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.TaskContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.DynamicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.AddBabyTipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.EditBabyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.SchoolBossFoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.SchoolBossFoodHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.EditFoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ChooseBabyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ChangeBabyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.BabyKeeperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.BabyImgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.PhotoShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.VideoShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ChangeClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeacherPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeachContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeachContentDetialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeacherTaskFeedbackDetialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeacherTaskFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeacherLeaveDetialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.MyClassDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.TeacherTabActivity"
+            android:label="Tabs/Styled"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+        <activity
+            android:name=".teacher.activity.TeacherTaskDetialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.EditTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".record.activity.RecordMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Dialog" />
+        <activity
+            android:name=".record.activity.RecordShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Dialog" />
+        <activity
+            android:name=".schoolboss.activity.SchoolBossMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schoolboss.activity.SchoolBossTaskActivity"
+            android:label="Tabs/Styled"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+        <activity
+            android:name=".schoolboss.activity.SchoolBossGrowupAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeacherMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.TeacherCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schoolboss.activity.SchoolClassesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schoolboss.activity.SchoolGradesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacher.activity.MyClassGridActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.NoticeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.EditDynamicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ModifyTeacherInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".parent.activity.BabyMoralDetailActvity" />
+        <activity android:name=".pay.wepay.WepayActivity" />
+
+        <!-- wepay -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver
+            android:name=".AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <!-- qq回调需要注册该activity -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- qq授权需要注册该activity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- 请将1101255276换成开发者自己应用的腾讯开放平台 Appid -->
+                <data android:scheme="tencent1104970103" />
+            </intent-filter>
+        </activity>
+
+        <!-- 分享界面 -->
+        <activity
+            android:name="cn.bidaround.ytcore.activity.SinaShareActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 360下载更新 jar包里面的资源 -->
+        <activity
+            android:name="com.qihoo.updatesdk.lib.UpdateTipDialogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 应用授权 activity -->
+        <activity
+            android:name="cn.bidaround.ytcore.login.AuthActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 友推积分activity -->
+        <activity android:name="cn.bidaround.point.PointActivity" />
+
+        <!-- 截屏编辑activity -->
+        <activity
+            android:name="cn.bidaround.youtui_template.ScreenCapEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- 友推渠道号，应用名(英文或拼音)+"_yt"，如：“jd_yt”，用于识别通过友推下载的应用，请正确填写否则无法正确统计 -->
+        <meta-data
+            android:name="YOUTUI_CHANNEL"
+            android:value="jggy_yt" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56e27dcce0f55aa27c000f03" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="jygy" />
+
+        <activity
+            android:name=".parent.activity.MyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.MyPayHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.PayInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.PayListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ConfirmPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.PaySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.AlipayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ChangeClassHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.TeacherChangeClassHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.ChangeClassRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".parent.activity.TeachrChangeClassRecordActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

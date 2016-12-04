@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeyInfo>
+
+    <!-- 
+    	分享平台的注册信息，一定要填入在相应平台注册的正确信息，不然应用无法完成授权，也无法进行分享，Enable属性决定是否分享该平台 
+    	
+    	RedirectUrl：授权回调页（当平台有这个字段，就一定要设置）
+    	AppId、AppKey、AppSecret都是平台对外需要设置的字段、当需要哪些就设置哪些
+    	
+    	社交平台注册地址：
+    	微信			http://open.weixin.qq.com
+		新浪微博		http://open.weibo.com
+		腾讯微博		http://dev.t.qq.com
+		QQ空间、QQ	http://open.qq.com/
+		微信好友		http://open.weixin.qq.com
+		易信 			http://open.yixin.im/
+		开心网		http://open.kaixin001.com/   
+		人人网		http://dev.renren.com
+		
+		注意：使用demo进行开心网分享时提示“你要连接的网站尚未通过审核”，测试demo可使用账号：bidaround 密码:123456789
+    -->
+
+	<!-- 
+		请在友推官网注册，提交应用，获取AppKey/AppSecret  http://youtui.mobi/ 
+		注意： 如果在友推只提供AppKey，在AppKey和AppSecret处都写AppKey值；若友推有提供AppSecret请填写相应的AppSecret值
+	-->
+	<YouTui 
+	    AppKey="339134"
+	    AppSecret="1ef305220dbd94"
+	    /> 
+
+	<!---->
+    <!--&lt;!&ndash; 微信 &ndash;&gt;-->
+    <!--<Wechat-->
+        <!--AppId="wx87db7f75708f0516"-->
+        <!--AppSecret="c65902ed5c7d9ce33bf199bb51e805e2"-->
+        <!--Enable="true" />-->
+
+    <!--&lt;!&ndash; 微信朋友圈 &ndash;&gt;-->
+    <!--<WechatMoments-->
+        <!--AppId="wx87db7f75708f0516"-->
+        <!--AppSecret="c65902ed5c7d9ce33bf199bb51e805e2"-->
+        <!--Enable="true" />-->
+
+    <!--&lt;!&ndash; 微信收藏 &ndash;&gt;-->
+    <!--<WechatFavorite-->
+        <!--AppId="wx87db7f75708f0516"-->
+        <!--AppSecret="c65902ed5c7d9ce33bf199bb51e805e2"-->
+        <!--Enable="true" />-->
+
+    <!-- QQ -->
+    <QQ
+        AppId="1101255276"
+        AppKey="h4sOXgtTtsqRjoOq"
+        Enable="true" />
+
+    <!-- QQ空间 -->
+    <QZone
+        AppId="1101255276"
+        AppKey="h4sOXgtTtsqRjoOq"
+        Enable="true" />
+
+
+    <!-- 短信 -->
+    <ShortMessage Enable="true" />
+
+    <!-- 邮件 -->
+    <Email Enable="true" />
+
+    <!-- 复制链接 -->
+    <CopyLink Enable="true" />
+
+</KeyInfo>
