@@ -332,7 +332,7 @@ public class EditFoodActivity extends BaseViewActivity implements ChooseImageAda
                 }
 
                 @Override
-                public void onFaild(Response response) {
+                public void onFailed(Response response) {
                     progresser.showContent();
                     Tools.toastMsg(EditFoodActivity.this, response.getMsg());
                 }
@@ -394,7 +394,7 @@ public class EditFoodActivity extends BaseViewActivity implements ChooseImageAda
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 if (response.getMsg().equals("could not execute statement"))
                     Tools.toastMsg(EditFoodActivity.this, "非法输入，请检查是否输入非法字符!");

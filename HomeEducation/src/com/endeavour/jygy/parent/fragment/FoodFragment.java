@@ -46,7 +46,7 @@ public class FoodFragment extends BaseViewFragment {
             }
 
             @Override
-            public void onFaild(String msg) {
+            public void onFailed(String msg) {
                 progresser.showError(msg, false);
             }
         });

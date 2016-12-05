@@ -185,7 +185,7 @@ public class ChooseBabyActivity extends BaseViewActivity implements ChooseBabyAd
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         Tools.toastMsg(ChooseBabyActivity.this, response.getMsg());
                     }
@@ -226,7 +226,7 @@ public class ChooseBabyActivity extends BaseViewActivity implements ChooseBabyAd
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Toast.makeText(ChooseBabyActivity.this, response.getMsg(), Toast.LENGTH_SHORT).show();
             }

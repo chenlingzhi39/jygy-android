@@ -138,7 +138,7 @@ public class ParentHomeActivity extends BaseViewActivityHome {
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                     }
                 });
@@ -194,7 +194,7 @@ public class ParentHomeActivity extends BaseViewActivityHome {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
 
             }

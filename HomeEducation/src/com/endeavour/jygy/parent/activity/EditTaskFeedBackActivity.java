@@ -64,7 +64,7 @@ public class EditTaskFeedBackActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(EditTaskFeedBackActivity.this, "暂时不支持个别特殊表情");
             }

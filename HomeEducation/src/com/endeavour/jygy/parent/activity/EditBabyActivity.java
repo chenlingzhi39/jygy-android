@@ -279,7 +279,7 @@ public class EditBabyActivity extends BaseViewActivity implements RadioGroup.OnC
                 }
 
                 @Override
-                public void onFaild(Response response) {
+                public void onFailed(Response response) {
                     progresser.showContent();
                     Tools.toastMsg(EditBabyActivity.this, response.getMsg());
                 }
@@ -342,7 +342,7 @@ public class EditBabyActivity extends BaseViewActivity implements RadioGroup.OnC
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(EditBabyActivity.this, response.getMsg());
             }
@@ -369,7 +369,7 @@ public class EditBabyActivity extends BaseViewActivity implements RadioGroup.OnC
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(EditBabyActivity.this, "没有找到班级对应关系");
             }

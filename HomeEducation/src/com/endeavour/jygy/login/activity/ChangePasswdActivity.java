@@ -85,7 +85,7 @@ public class ChangePasswdActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(ChangePasswdActivity.this, response.getMsg());
             }

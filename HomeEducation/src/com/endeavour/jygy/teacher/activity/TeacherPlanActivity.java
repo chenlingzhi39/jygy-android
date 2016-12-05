@@ -75,7 +75,7 @@ public class TeacherPlanActivity extends BaseViewActivity implements AdapterView
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(TeacherPlanActivity.this, response.getMsg());
                 showData();

@@ -26,7 +26,7 @@ public class FoodOpter {
 
         void onLoad(GetFoodResp resps);
 
-        void onFaild(String msg);
+        void onFailed(String msg);
     }
 
     public void loadMore(final GetFoodRespListener listener) {
@@ -53,8 +53,8 @@ public class FoodOpter {
             }
 
             @Override
-            public void onFaild(Response response) {
-                listener.onFaild(response.getMsg());
+            public void onFailed(Response response) {
+                listener.onFailed(response.getMsg());
             }
         });
     }
@@ -70,8 +70,8 @@ public class FoodOpter {
             }
 
             @Override
-            public void onFaild(Response response) {
-                listener.onFaild(response.getMsg());
+            public void onFailed(Response response) {
+                listener.onFailed(response.getMsg());
             }
         });
     }

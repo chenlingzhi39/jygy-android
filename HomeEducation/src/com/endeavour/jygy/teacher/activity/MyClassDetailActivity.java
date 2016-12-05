@@ -80,7 +80,7 @@ public class MyClassDetailActivity extends BaseViewActivity {
 					}
 
 					@Override
-					public void onFaild(Response response) {
+					public void onFailed(Response response) {
 						progresser.showContent();
 						refreshdata();
 					}

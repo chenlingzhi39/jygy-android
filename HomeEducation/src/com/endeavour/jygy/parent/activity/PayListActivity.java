@@ -80,7 +80,7 @@ public class PayListActivity extends PayTransFlow {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showError(response.getMsg(), false);
                 setTitleRight("缴费记录");
             }

@@ -59,7 +59,7 @@ public class WepayActivity extends PayTransFlow {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 canBack = true;
                 Toast.makeText(WepayActivity.this, response.msg, Toast.LENGTH_SHORT).show();
                 WepayActivity.this.finish();

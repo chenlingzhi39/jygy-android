@@ -91,7 +91,7 @@ public class ParentClassListActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 progresser.showError(response.getMsg(), false);
             }

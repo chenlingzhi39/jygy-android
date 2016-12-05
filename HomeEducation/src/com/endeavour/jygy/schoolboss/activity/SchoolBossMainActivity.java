@@ -133,7 +133,7 @@ public class SchoolBossMainActivity extends BaseViewActivity {
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                     }
                 });
@@ -198,7 +198,7 @@ public class SchoolBossMainActivity extends BaseViewActivity {
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
 
                     }

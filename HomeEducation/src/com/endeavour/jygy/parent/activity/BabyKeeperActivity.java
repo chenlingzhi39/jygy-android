@@ -144,7 +144,7 @@ public class BabyKeeperActivity extends BaseViewActivity implements RadioGroup.O
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(BabyKeeperActivity.this, response.getMsg());
             }

@@ -127,7 +127,7 @@ public class TeacherTaskDetialActivity extends BaseViewActivity implements TaskG
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(TeacherTaskDetialActivity.this, response.getMsg());
             }

@@ -166,7 +166,7 @@ public class ChangeClassActivity extends ChangeClassTransFlow {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showError(response.getMsg(), false);
             }
         });
@@ -191,7 +191,7 @@ public class ChangeClassActivity extends ChangeClassTransFlow {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(ChangeClassActivity.this, response.getMsg());
             }

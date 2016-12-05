@@ -40,7 +40,7 @@ public class FileUploadProxy {
     private void uploadSignleImg(String filePath, String picType, BaseRequest.ResponseListener listener) {
         if (TextUtils.isEmpty(filePath) || !FileUtils.isFileExists(filePath)) {
             if (listener != null) {
-                listener.onFaild(new Response(1, "文件不存在"));
+                listener.onFailed(new Response(1, "文件不存在"));
             }
         } else {
             File dirFile = new File(FILE_DIR);
@@ -99,9 +99,9 @@ public class FileUploadProxy {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 Log.d(TAG, "zip faild");
-                listener.onFaild(response);
+                listener.onFailed(response);
             }
         });
         ziper.execute();

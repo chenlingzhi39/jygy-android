@@ -79,7 +79,7 @@ public class FoodActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(String msg) {
+            public void onFailed(String msg) {
                 progresser.showError(msg, false);
             }
         });

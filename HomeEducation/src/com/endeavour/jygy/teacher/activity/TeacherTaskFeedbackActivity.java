@@ -76,7 +76,7 @@ public class TeacherTaskFeedbackActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(TeacherTaskFeedbackActivity.this, response.getMsg());
             }

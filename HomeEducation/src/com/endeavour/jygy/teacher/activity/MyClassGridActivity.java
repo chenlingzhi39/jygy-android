@@ -56,12 +56,13 @@ public class MyClassGridActivity extends BaseViewActivity {
                     progresser.showError("暂无数据", false);
                 } else {
                     adapter = new CheeseDynamicAdapter(MyClassGridActivity.this, resps, getResources().getInteger(R.integer.column_count));
+                    setTitleText(AppConfigHelper.getConfig(AppConfigDef.classNick)+"("+"人)");
                     gridView.setAdapter(adapter);
                 }
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showError(response.getMsg(), false);
             }
         });

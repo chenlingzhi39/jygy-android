@@ -101,7 +101,7 @@ public class ModifyTeacherInfoActivity extends BaseViewActivity {
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         Tools.toastMsg(ModifyTeacherInfoActivity.this, response.getMsg());
                     }
@@ -109,7 +109,7 @@ public class ModifyTeacherInfoActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(ModifyTeacherInfoActivity.this, response.getMsg());
             }

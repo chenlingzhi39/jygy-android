@@ -112,7 +112,7 @@ class  FileUploader extends AsyncTask<String, String, Response> {
             if(deleteFileWhenFaild){
                 FileUtils.deleteAllFiles(file.getParentFile());
             }
-            listener.onFaild(response);
+            listener.onFailed(response);
         }
     }
 }

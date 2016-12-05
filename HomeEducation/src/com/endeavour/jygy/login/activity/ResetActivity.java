@@ -114,7 +114,7 @@ public class ResetActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(ResetActivity.this, response.getMsg());
             }
@@ -155,7 +155,7 @@ public class ResetActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(ResetActivity.this, response.getMsg());
             }

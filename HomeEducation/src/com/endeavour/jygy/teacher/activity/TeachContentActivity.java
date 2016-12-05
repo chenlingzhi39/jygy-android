@@ -124,7 +124,7 @@ public class TeachContentActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(TeachContentActivity.this, response.getMsg());
             }
@@ -158,7 +158,7 @@ public class TeachContentActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(TeachContentActivity.this, response.getMsg());
             }

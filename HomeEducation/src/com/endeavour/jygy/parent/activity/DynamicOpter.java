@@ -184,7 +184,7 @@ public class DynamicOpter {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 listener.onLoad(getDynamicsFromDBByPageIndex(pageIndex));
             }
         });

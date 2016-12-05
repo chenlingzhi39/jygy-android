@@ -44,12 +44,12 @@ public class WePayTransaction {
     public void pay(Context context, int totalFee, String body, String attach, final BaseRequest.ResponseListener listener) {
 
         if (!registerApp()) {
-            listener.onFaild(new Response(-1, "无法注册到微信"));
+            listener.onFailed(new Response(-1, "无法注册到微信"));
             return;
         }
 
         if (!isSupportPay()) {
-            listener.onFaild(new Response(-1, "未安装微信 或 微信版本过低, 无法支付"));
+            listener.onFailed(new Response(-1, "未安装微信 或 微信版本过低, 无法支付"));
             return;
         }
 
@@ -77,8 +77,8 @@ public class WePayTransaction {
             }
 
             @Override
-            public void onFaild(Response response) {
-                listener.onFaild(response);
+            public void onFailed(Response response) {
+                listener.onFailed(response);
             }
         });
     }

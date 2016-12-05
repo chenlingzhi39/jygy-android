@@ -75,7 +75,7 @@ public class SchoolBossFoodHistoryActivity extends BaseViewActivity implements S
             }
 
             @Override
-            public void onFaild(String msg) {
+            public void onFailed(String msg) {
 //                progresser.showContent();
                 progresser.showError(msg, false);
                 mSwipyRefreshLayout.setRefreshing(false);
@@ -150,7 +150,7 @@ public class SchoolBossFoodHistoryActivity extends BaseViewActivity implements S
             }
 
             @Override
-            public void onFaild(String msg) {
+            public void onFailed(String msg) {
                 mSwipyRefreshLayout.setRefreshing(false);
                 Tools.toastMsg(SchoolBossFoodHistoryActivity.this, msg);
             }

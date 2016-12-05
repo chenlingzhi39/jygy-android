@@ -60,7 +60,7 @@ public class FoodHistoryActivity extends BaseViewActivity implements SwipyRefres
             }
 
             @Override
-            public void onFaild(String msg) {
+            public void onFailed(String msg) {
 //                progresser.showContent();
                 progresser.showError(msg, false);
                 mSwipyRefreshLayout.setRefreshing(false);
@@ -135,7 +135,7 @@ public class FoodHistoryActivity extends BaseViewActivity implements SwipyRefres
             }
 
             @Override
-            public void onFaild(String msg) {
+            public void onFailed(String msg) {
                 mSwipyRefreshLayout.setRefreshing(false);
                 Tools.toastMsg(FoodHistoryActivity.this, msg);
             }

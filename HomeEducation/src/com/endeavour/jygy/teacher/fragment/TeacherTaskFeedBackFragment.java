@@ -74,7 +74,7 @@ public class TeacherTaskFeedBackFragment extends BaseViewFragment implements Ada
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showError(response.getMsg(), false);
             }
         });

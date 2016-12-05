@@ -323,7 +323,7 @@ public class NoticeListActivity extends BaseViewActivity {
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         doGetNoticeAciton();
                     }
@@ -383,7 +383,7 @@ public class NoticeListActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 if(!AppConfigHelper.getConfig(AppConfigDef.loginType).equals("1"))
                     getLeaveList();
@@ -462,7 +462,7 @@ public class NoticeListActivity extends BaseViewActivity {
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         initNotice();
                         initView();

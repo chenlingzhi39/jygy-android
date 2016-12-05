@@ -70,7 +70,7 @@ public class SchoolGradesActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showError(response.getMsg(), false);
             }
         });

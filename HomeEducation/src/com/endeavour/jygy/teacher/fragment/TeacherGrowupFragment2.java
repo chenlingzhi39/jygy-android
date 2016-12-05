@@ -89,7 +89,7 @@ public class TeacherGrowupFragment2 extends BaseViewFragment implements AdapterV
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showError(response.getMsg(), false);
             }
         });

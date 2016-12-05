@@ -48,7 +48,7 @@ public class GradeClassOpter {
             public void onSuccess(Response response) {
                 List<GetGradeClassResp> resp = JSONObject.parseArray(String.valueOf(response.getResult()), GetGradeClassResp.class);
                 if (resp == null || resp.isEmpty()) {
-                    listener.onFaild(new Response(1, "没有找到班级对应关系"));
+                    listener.onFailed(new Response(1, "没有找到班级对应关系"));
                 } else {
                     try {
                         DbUtils dbController = DbHelper.getInstance().getDbController();
@@ -59,7 +59,7 @@ public class GradeClassOpter {
                     }
                     List<GetGradeClassResp> grades = getGrades();
                     if (grades == null || grades.isEmpty()) {
-                        listener.onFaild(new Response(1, "没有找到班级对应关系"));
+                        listener.onFailed(new Response(1, "没有找到班级对应关系"));
                     } else {
                         listener.onSuccess(new Response(0, "success", grades));
                     }
@@ -68,8 +68,8 @@ public class GradeClassOpter {
             }
 
             @Override
-            public void onFaild(Response response) {
-                listener.onFaild(response);
+            public void onFailed(Response response) {
+                listener.onFailed(response);
             }
         });
     }

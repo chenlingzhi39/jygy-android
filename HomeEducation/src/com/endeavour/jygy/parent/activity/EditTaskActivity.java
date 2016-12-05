@@ -570,7 +570,7 @@ public class EditTaskActivity extends BaseViewActivity implements
                                     }
 
                                     @Override
-                                    public void onFaild(Response response) {
+                                    public void onFailed(Response response) {
                                         progresser.showContent();
                                         Tools.toastMsg(EditTaskActivity.this,
                                                 response.getMsg());
@@ -588,7 +588,7 @@ public class EditTaskActivity extends BaseViewActivity implements
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         Tools.toastMsg(EditTaskActivity.this, response.getMsg());
                     }
@@ -627,7 +627,7 @@ public class EditTaskActivity extends BaseViewActivity implements
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         Tools.toastMsg(EditTaskActivity.this, "暂时不支持个别特殊表情");
                     }

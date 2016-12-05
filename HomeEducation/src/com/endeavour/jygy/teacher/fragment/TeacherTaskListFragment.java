@@ -138,7 +138,7 @@ public class TeacherTaskListFragment extends BaseViewFragment implements Adapter
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
 //                progresser.showContent();
 //                Tools.toastMsg(getActivity(), response.getMsg());
                 progresser.showError(response.getMsg(), false);

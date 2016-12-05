@@ -109,7 +109,7 @@ public class AlipayActivity extends PayTransFlow {
 //            }
 //
 //            @Override
-//            public void onFaild(Response response) {
+//            public void onFailed(Response response) {
 //                startActivity(PaySuccessActivity.getStartIntent(AlipayActivity.this, PaySuccessActivity.TYEP_ALIPAY));
 //                AlipayActivity.this.finish();
 //            }

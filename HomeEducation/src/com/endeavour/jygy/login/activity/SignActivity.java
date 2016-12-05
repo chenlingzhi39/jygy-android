@@ -124,7 +124,7 @@ public class SignActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(SignActivity.this, response.getMsg());
             }
@@ -183,7 +183,7 @@ public class SignActivity extends BaseViewActivity {
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(SignActivity.this, response.getMsg());
             }

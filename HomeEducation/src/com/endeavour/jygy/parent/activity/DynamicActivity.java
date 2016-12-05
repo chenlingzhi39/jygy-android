@@ -257,7 +257,7 @@ public class DynamicActivity extends BaseViewActivity implements SwipyRefreshLay
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(DynamicActivity.this, response.getMsg());
             }
@@ -295,7 +295,7 @@ public class DynamicActivity extends BaseViewActivity implements SwipyRefreshLay
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(DynamicActivity.this, response.getMsg());
             }
@@ -326,7 +326,7 @@ public class DynamicActivity extends BaseViewActivity implements SwipyRefreshLay
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(DynamicActivity.this, response.getMsg());
             }
@@ -352,7 +352,7 @@ public class DynamicActivity extends BaseViewActivity implements SwipyRefreshLay
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(DynamicActivity.this, response.getMsg());
             }

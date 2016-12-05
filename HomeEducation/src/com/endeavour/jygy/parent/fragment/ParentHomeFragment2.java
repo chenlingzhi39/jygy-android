@@ -462,7 +462,7 @@ public class ParentHomeFragment2 extends BaseHomeViewFragment implements
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
 
             }
         });
@@ -488,7 +488,7 @@ public class ParentHomeFragment2 extends BaseHomeViewFragment implements
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         Tools.toastMsg(getActivity(), response.getMsg());
                         getRegistList();
@@ -534,7 +534,7 @@ public class ParentHomeFragment2 extends BaseHomeViewFragment implements
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         Tools.toastMsg(getActivity(), response.getMsg());
                     }
@@ -695,7 +695,7 @@ public class ParentHomeFragment2 extends BaseHomeViewFragment implements
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 if ("1".equals(AppConfigHelper.getConfig(AppConfigDef.graduationFlag))) {
                     toParentTab();

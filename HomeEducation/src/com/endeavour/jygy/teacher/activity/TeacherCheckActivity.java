@@ -58,7 +58,7 @@ public class TeacherCheckActivity extends BaseViewActivity implements TeacherChe
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 progresser.showError(response.getMsg(), false);
             }
@@ -77,7 +77,7 @@ public class TeacherCheckActivity extends BaseViewActivity implements TeacherChe
             }
 
             @Override
-            public void onFaild(Response response) {
+            public void onFailed(Response response) {
                 progresser.showContent();
                 Tools.toastMsg(TeacherCheckActivity.this, response.getMsg());
             }

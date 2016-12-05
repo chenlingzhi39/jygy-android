@@ -115,7 +115,7 @@ public class FileZiper extends AsyncTask<String, String, Response> {
         if (response.code == 0) {
             listener.onSuccess(response);
         } else {
-            listener.onFaild(response);
+            listener.onFailed(response);
         }
     }
 }

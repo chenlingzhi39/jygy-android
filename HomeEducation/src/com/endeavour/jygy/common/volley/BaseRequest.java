@@ -68,11 +68,11 @@ public class BaseRequest {
                     if (response.code == 0) {
                         listener.onSuccess(response);
                     } else {
-                        listener.onFaild(response);
+                        listener.onFailed(response);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
-                    listener.onFaild(new Response(1, "未知异常"));
+                    listener.onFailed(new Response(1, "未知异常"));
                 }
             }
 
@@ -80,7 +80,7 @@ public class BaseRequest {
 
             @Override
             public void onErrorResponse(VolleyError arg0) {
-                listener.onFaild(VolleyErrorHelper.getMessage(arg0));
+                listener.onFailed(VolleyErrorHelper.getMessage(arg0));
             }
         });
         request.setRetryPolicy(retryPolicy);
@@ -121,7 +121,7 @@ public class BaseRequest {
 
         void onSuccess(Response response);
 
-        void onFaild(Response response);
+        void onFailed(Response response);
 
     }
 

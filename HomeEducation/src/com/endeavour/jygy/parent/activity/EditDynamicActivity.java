@@ -269,7 +269,7 @@ public class EditDynamicActivity extends BaseViewActivity implements
                 }
 
                 @Override
-                public void onFaild(Response response) {
+                public void onFailed(Response response) {
                     progresser.showContent();
                     Tools.toastMsg(EditDynamicActivity.this, response.getMsg());
                 }
@@ -320,7 +320,7 @@ public class EditDynamicActivity extends BaseViewActivity implements
                     }
 
                     @Override
-                    public void onFaild(Response response) {
+                    public void onFailed(Response response) {
                         progresser.showContent();
                         if (response.getMsg().equals("could not execute statement"))
                             Tools.toastMsg(EditDynamicActivity.this, "非法输入，请检查是否输入非法字符!");
